@@ -12,7 +12,7 @@ app = Flask(__name__)
 def man():
     return render_template('home1.html')
 
-'''@app.route('/predict', methods=['POST'])
+@app.route('/predict', methods=['POST'])
 def home():
     SepalLengthCm = request.form['SepalLengthCm']
     SepalWidthCm = request.form['SepalWidthCm']
@@ -26,7 +26,7 @@ def home():
     print("PetalLengthCm == ",PetalLengthCm)
     print("PetalWidthCm == ",PetalWidthCm)
     print("Prediction == ",pred)
-    return render_template('after1.html', data=pred)'''
+    return render_template('after1.html', data=pred)
 
 
 if __name__ == "__main__":
